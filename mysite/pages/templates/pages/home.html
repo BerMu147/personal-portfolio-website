@@ -1,14 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" href="./style.css">
-        <title>Index</title>
+        <title>Berin Mujcinovic</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
-        {% extends "base.html" %}
         {% block page_content %}
-        <h1>Index</h1>
+        <h1>Who am I?</h1>
+        <section class="whoami">
+            <div class="preview">
+                <img src="../../../berinmujcinovic.jpg" alt="Berin Mujcinovic">
+                <h2>Berin Mujcinovic</h2>
+                <h3>Software Developer</h3>
+            </div>
+            <p>I am a student at the University of Dzemal Bijedic, at Faculty of Information Technologies. I am pursuing a degree in Computer Science.</p>
+            <p>Check out my <a href="https://github.com/BerMu147" target="_blank">GitHub</a>!</p>
+            <p>Check out my <a href="https://www.linkedin.com/in/berin.mujcinovic/" target="_blank">LinkedIn</a>!</p>
+        </section>
         {% endblock page_content %}
     </body>
 </html>
