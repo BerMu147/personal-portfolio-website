@@ -1,6 +1,10 @@
 .preview{
     text-align: center;
-    /* width: 30%; */
+    width: 30%;
     position: absolute;
     background-color: blue;
+}
+
+body{
+    background-color: brown;
 }
