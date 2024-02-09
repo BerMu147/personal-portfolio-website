@@ -1,27 +1,27 @@
 {% extends "base.html" %}
-<!-- {% load static %} -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Berin Mujcinovic</title>
-        <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
         {% block page_content %}
-        <h1>Who am I?</h1>
         <section class="whoami">
             <div class="preview">
-                <img  alt="Berin Mujcinovic">
+                <img class="personalpicture" alt="Berin Mujcinovic"/>
                 <h2>Berin Mujcinovic</h2>
                 <h4>System Developer</h4>
                 <h4>Web Developer</h4>
                 <h4>DevOps</h4>
             </div>
-            <p>I am a student at the University of Dzemal Bijedic, at Faculty of Information Technologies. I am pursuing a degree in Computer Science.</p>
-            <p>Check out my <a href="https://github.com/BerMu147" target="_blank">GitHub</a>!</p>
-            <p>Check out my <a href="https://www.linkedin.com/in/berin.mujcinovic/" target="_blank">LinkedIn</a>!</p>
+            <div class="preview-info">
+                <h5>I am a student at the University of Dzemal Bijedic, at Faculty of Information Technologies, pursuing Bachelors degree in Computer Science.</h5>
+            </div>
         </section>
+        <!-- <section>
+            <p>Check out my <a href="https://github.com/BerMu147" target="_blank">GitHub</a>profile!</p>
+            <p>Add me on <a href="https://www.linkedin.com/in/berin.mujcinovic/" target="_blank">LinkedIn</a>!</p>
+        </section> -->
         {% endblock page_content %}
     </body>
 </html>
