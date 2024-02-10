@@ -3,7 +3,6 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<h1>Projects</h1>
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
@@ -16,9 +15,8 @@
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
-                   class="btn btn-primary">
-                    Read More
+                <a href="https://github.com/BerMu147/IoT-DeliveryStatus" target="_blank" class="btn btn-primary">
+                    Visit GitHub
                 </a>
             </div>
         </div>
