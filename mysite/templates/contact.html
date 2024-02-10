@@ -1,8 +1,14 @@
 {% extends "base.html" %}
-<form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <div class="form-actions">
-        <button type="submit">Send</button>
+{% block page_content %}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  </head>
+
+    <form method="post">
+      {% csrf_token %}
+      {{ form }}
+      <div class="form-actions">
+        <button type="submit" class="btn">Send</button>
       </div>
     </form>
+    {% endblock page_content %}
