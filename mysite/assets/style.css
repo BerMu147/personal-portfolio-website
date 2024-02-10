@@ -49,13 +49,46 @@ a{
 }
 
 .btn{
-    width: 39%;
+    width: 50%;
     background-color: #ffffff;
+    color: #272727;
+    border: 1px solid #272727;
     opacity: 0.9;
-    margin-left: 16%;
+    margin-left: 25%;
 }
 
 .btn:hover{
     background-color: #272727;
     color: #ffffff;
+}
+
+.contact-form{
+    width: 70%;
+    margin-left: 15%;
+    border: 3px solid #272727;
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: 5%;}
+
+.contact-form input, .contact-form label, .contact-form textarea{
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+    margin-bottom: 1%;
+}
+
+.sm-links{
+    margin-left: 27%;
+    width: 80%;
+}
+
+.sm-links a{
+    display: inline-block;
+    color: #ffffff;
+    margin: 5%;
+}
+
+.fa{
+    height: 50px;
+    width: 50px;
 }

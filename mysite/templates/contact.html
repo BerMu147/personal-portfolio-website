@@ -4,11 +4,25 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
 
-    <form method="post">
+    <form method="post" class="contact-form">
       {% csrf_token %}
       {{ form }}
       <div class="form-actions">
         <button type="submit" class="btn">Send</button>
       </div>
     </form>
+    <section class="sm-links">
+      <a href="https://github.com/BerMu147" target="_blank">
+        <i class="fa fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/berin.mujcinovic/" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://soundcloud.com/berin-muj-inovi" target="_blank">
+      <i class="fa fa-soundcloud"></i>
+    </a>
+    <a href="https://twitter.com/BerinMujcinovic" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+    </section>
     {% endblock page_content %}
