@@ -39,6 +39,7 @@ a{
     margin-left: 31%;
     background-color: #ffffff;
     opacity: 0.9;
+    padding: 10px;
 }
 
 .personalpicture
@@ -47,6 +48,10 @@ a{
     height: 70%;
     opacity: 1.0;
 }
+
+.card{
+    opacity: 0.9;
+    padding: 5px;}
 
 .btn{
     width: 50%;
@@ -82,6 +87,10 @@ a{
     background-color: #272727;
     color: #ffffff;
     border: 1px solid #ffffff;
+}
+
+.card-title{
+    text-align: center ;
 }
 
 .contact-form{
