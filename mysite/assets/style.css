@@ -9,7 +9,7 @@ body{
 
 .navigationbar{
     text-align: center;
-    background-color: #ffffff;
+    background-color: transparent;
     margin-bottom: 1%;
     opacity: 0.9;
     padding: 10px 0 10px 0;
@@ -19,7 +19,7 @@ body{
 .navigationbar a{
     text-align: center;
     padding: 0 12% 0 12%;
-    color: #272727;
+    color: #ffffff;
 }
 
 a{
@@ -30,16 +30,22 @@ a{
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: #ffffff;
+    background-color: transparent;
     float: left;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .preview-info{
     width: 69%;
     margin-left: 31%;
-    background-color: #ffffff;
+    margin-bottom: 2%;
+    background-color: transparent;
+    color: #ffffff;
     opacity: 0.9;
     padding: 10px;
+    border: 1px solid #ffffff;
+
 }
 
 .personalpicture
@@ -96,8 +102,9 @@ a{
 .contact-form{
     width: 70%;
     margin-left: 15%;
-    border: 3px solid #272727;
-    background-color: #ffffff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     opacity: 0.9;
     padding: 5%;}
 
@@ -106,6 +113,8 @@ a{
     margin-left: 25%;
     display: block;
     margin-bottom: 1%;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 .sm-links{
