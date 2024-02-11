@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        {% block page_content %}
+        <section class="whoami">
+            
+            <div class="preview">
+                <img src="/static/berinmujcinovic.jpg" class="personalpicture" alt="Berin Mujcinovic"/>
+                <h2>Berin Mujčinović</h2><hr>
+                <h4>System & Web Developer</h4>
+                <h4>DevOps</h4>
+            </div>
+            <div class="preview-info">
+                <h5>Activist, Stoic, Explorer, Prankster and of course Developer.</h5>
+                <h5>Focused on improving myself every day. Not only as an IT guy, but as human as well. 
+                    Prepared to learn, risk, help others succeed and then joke about it, because it needs to be fun in order to grow.</h5>
+                <h5>Student at the University of Dzemal Bijedic, at Faculty of Information Technologies, pursuing Bachelors degree in Computer Science.</h5>
+                <h5>Hobby - Music Production</h5>
+            </div>
+            <button type="button" class="btnCV"><a href="static/berinmujcinovic.pdf" download="jbg">Download CV of Berin Mujcinovic</a></button>
+            
+        </section>
+        {% endblock page_content %}
+    </body>
+</html>
