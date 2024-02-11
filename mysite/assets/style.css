@@ -78,7 +78,9 @@ a{
     color: #272727;
     border: 1px solid #272727;
     opacity: 0.9;
-    margin-left: 25%;
+    width: 50%;
+    height: 50px    ;
+    margin-left: 10%;
 }
 
 .btnCV a{
@@ -109,8 +111,8 @@ a{
     padding: 5%;}
 
 .contact-form input, .contact-form label, .contact-form textarea{
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
     display: block;
     margin-bottom: 1%;
     background-color: transparent;
@@ -190,6 +192,10 @@ video {
         margin: 0;
         font-size: smaller;
         padding: 2%;
+    }
+    .project-details{
+        width: 94%;
+        margin-left: 3%;
     }
     .sm-links a{
         padding-top: 2%;
