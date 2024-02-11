@@ -137,6 +137,20 @@ i{
     width: 50px;
 }
 
+.project-details{
+    padding: 20px;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+.project-title{
+    text-align: center;
+    color: #ffffff;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid #ffffff;
+}
+
 video {
     position: absolute;
     top: 0;
