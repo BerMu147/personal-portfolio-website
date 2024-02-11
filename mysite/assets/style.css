@@ -1,6 +1,6 @@
 body{
-    background-repeat: no-repeat;
     margin-top: 15px;
+    background-image: url("background2.jpg");
 }
 
 *{
@@ -132,6 +132,10 @@ a{
     height: 50px;
     width: 50px;
 }
+i{
+    height: 50px;
+    width: 50px;
+}
 
 video {
     position: absolute;
@@ -140,4 +144,44 @@ video {
     min-width: 100%;
     min-height: 100%;
     z-index:-100;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .preview{
+        width: 80%;
+        height: 20%;
+        margin-left: 10%;
+        font-size: smaller;
+        float: none;
+        margin-bottom: 2%;
+    }
+    .preview-info{
+        width: 100%;
+        margin-left: 0%;
+        font-size: smaller;
+        float: none;
+        margin-bottom: 2%;
+    }
+    .navigationbar{
+        margin-bottom: 2%;
+    }
+    .btnCV{
+        display:none;
+    }
+    .navigationbar a {
+        display:grid;
+    }
+    .contact-form{
+        width: 100%;
+        margin: 0;
+        font-size: smaller;
+        padding: 2%;
+    }
+    .sm-links a{
+        padding-top: 2%;
+        margin: 0;
+    }
+    video{
+        display: none;
+    }
   }
