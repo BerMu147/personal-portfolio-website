@@ -1,1 +1,1 @@
-### Check My full website on link https://bermu147.github.io/
+### Website created using django for personal information display
