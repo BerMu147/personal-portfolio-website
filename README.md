@@ -15,5 +15,8 @@ projects - personal projects directory; <br />
 templatess - html files (pages); <br />
 uploads - storage folder cointaining media for publiushed projects (articles); <br />
 
+### Preview
+http://bermu147.pythonanywhere.com/
+
 ### Documentation 
 https://docs.djangoproject.com/en/5.0/topics/install/
