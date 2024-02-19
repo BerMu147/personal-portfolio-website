@@ -1,3 +1,7 @@
 from django.contrib import admin
+from experience.models import Experience
 
-# Register your models here.
+class ExperienceAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Experience, ExperienceAdmin)

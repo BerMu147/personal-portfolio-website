@@ -1,1 +1,22 @@
 {% extends "base.html" %}
+
+{% block page_content %}
+<div class="row">
+{% for experience in experiences %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ experience.organizationName }}</h5>
+                <p class="card-text">{{ experience.position }}</p>
+                <p class="card-text">{{ experience.description }}</p>
+                <p class="card-text">{{ experience.startDate }}</p>
+                <p class="card-text">{{ experience.endDate }}</p>
+                <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
