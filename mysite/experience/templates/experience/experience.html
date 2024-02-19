@@ -2,18 +2,18 @@
 
 {% block page_content %}
 <div class="row">
-{% for experience in experiences %}
+{% for exp in experience %}
     <div class="col-md-4">
-        <div class="card mb-2">
+        <div class="card mb-2 experience-card">
             <div class="card-body">
-                <h5 class="card-title">{{ experience.organizationName }}</h5>
-                <p class="card-text">{{ experience.position }}</p>
-                <p class="card-text">{{ experience.description }}</p>
-                <p class="card-text">{{ experience.startDate }}</p>
-                <p class="card-text">{{ experience.endDate }}</p>
-                <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
-                    Read More
-                </a>
+                <h5 class="card-title">Company Name: {{ exp.organizationName }}</h5>
+                {% if exp.image %}
+                <img class="card-img-top" src="{{ exp.image.url }}">
+                {% endif %} 
+                <p class="card-text">Position: {{ exp.position }}</p>
+                <p class="card-text">Description: {{ exp.description }}</p>
+                <p class="card-text">Start Date: {{ exp.startDate }}</p>
+                <p class="card-text">End Date: {{ exp.endDate }}</p>
             </div>
         </div>
     </div>

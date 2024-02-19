@@ -13,13 +13,12 @@ body{
     margin-bottom: 1%;
     opacity: 0.9;
     display: flexbox;
-    /* padding: 10px 0 10px 0; */
     border: 1px solid #272727;
 }
 
 .navigationbar a{
     text-align: center;
-    padding: 0 12% 0 12%;
+    /* padding: 0 12% 0 12%; */
     color: #ffffff;
 }
 
@@ -153,6 +152,19 @@ i{
     padding: 2%;
     border: 1px solid #ffffff;
 }
+
+.experience-card{
+    display: flexbox;
+}
+
+.experience-card img{
+    max-width: 64px;
+    max-height: 64px;
+}
+
+  @media only screen and (min-width: 768px){
+    
+  }
 
   @media only screen and (max-width: 420px) {
     .preview{
