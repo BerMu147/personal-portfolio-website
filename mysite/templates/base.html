@@ -19,11 +19,23 @@
 
 <body class="container">
 
-    <nav class="navigationbar">
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'experience' %}">Experience</a>
-        <a href="{% url 'project_index'%}">Projects</a>
-        <a href="{% url 'contact' %}">Contact</a>
+    <div class="stars"></div>
+
+    <nav class="navigationbar navbar navbar-expand bg-dark">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'experience' %}">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'project_index'%}">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
     </nav>
 {% block page_content %}{% endblock page_content %}
 

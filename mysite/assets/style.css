@@ -1,24 +1,38 @@
 body{
     margin-top: 15px;
-    background-image: url("background2.jpg");
+    /* background-image: url("background2.jpg"); */
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+
 }
 
 *{
     border-radius: 5px;
 }
 
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: block;
+    z-index: 0;
+   }
+
 .navigationbar{
     text-align: center;
-    background-color: transparent;
     margin-bottom: 1%;
     opacity: 0.9;
     display: flexbox;
     border: 1px solid #272727;
 }
 
+.navigationbar li{
+    padding: auto;
+    display: flexbox;
+}
+
 .navigationbar a{
-    text-align: center;
-    /* padding: 0 12% 0 12%; */
     color: #ffffff;
 }
 
@@ -153,6 +167,14 @@ i{
     border: 1px solid #ffffff;
 }
 
+.section-title{
+    text-align: center;
+    color: #ffffff;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid #ffffff;
+}
+
 .experience-card{
     display: flexbox;
 }
@@ -204,8 +226,5 @@ i{
     .sm-links a{
         padding-top: 2%;
         margin: 0;
-    }
-    video{
-        display: none;
     }
   }
