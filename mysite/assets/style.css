@@ -17,20 +17,27 @@ body{
     z-index: 0;
    }
 
-.navigationbar{
+.navbar{
     text-align: center;
     margin-bottom: 1%;
     opacity: 0.9;
     display: flexbox;
-    border: 1px solid #272727;
+    border: 1px solid #ffffff;
 }
 
-.navigationbar li{
-    padding: auto;
-    display: flexbox;
+.navbar ul{
+    margin: auto;
+}
+.navbar li{
+    padding: 20px;
+    margin: 0 30px 0 30px;
 }
 
-.navigationbar a{
+.navbar li:hover{
+    background-color: #272727;
+}
+
+.navbar a{
     color: #ffffff;
 }
 
@@ -131,6 +138,10 @@ a{
     color: #ffffff;
 }
 
+.cv{
+    margin: 10%;
+}
+
 .sm-links{
     margin-left: 27%;
     width: 80%;
@@ -182,9 +193,16 @@ i{
     max-height: 64px;
 }
 
-  @media only screen and (min-width: 768px){
-    
-  }
+  @media only screen and (max-width: 768px){
+
+    .navbar li{
+        margin: 0;
+        padding: 0 15px 0 15px;
+        width: 100%;
+        text-align: center;
+        font-size: smaller;
+    }
+}
 
   @media only screen and (max-width: 420px) {
     .preview{
@@ -202,14 +220,15 @@ i{
         float: none;
         margin-bottom: 2%;
     }
-    .navigationbar{
+    .navbar{
         margin-bottom: 2%;
     }
-    .btnCV{
-        display:none;
-    }
-    .navigationbar a {
-        display:grid;
+    .navbar li{
+        margin: 0;
+        padding: 0 15px 0 15px;
+        width: 100%;
+        text-align: center;
+        font-size: smaller;
     }
     .contact-form{
         width: 100%;
