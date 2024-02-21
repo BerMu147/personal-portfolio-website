@@ -68,15 +68,15 @@ a{
 
 .preview{
     text-align: center;
+    background-color: transparent;
     width: 30%;
     height: 50%;
-    background-color: transparent;
     float: left;
     color: #ffffff;
     border: 1px solid #ffffff;
 }
 
-.preview-info{
+.preview-info, .preview-skills{
     width: 69%;
     margin-left: 31%;
     margin-bottom: 2%;
@@ -93,6 +93,14 @@ a{
     width: 100%;
     height: 70%;
     opacity: 1.0;
+}
+
+.preview-skills i{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 4em;
 }
 
 .card{
@@ -207,6 +215,11 @@ i{
     max-height: 64px;
 }
 
+.card-img-top{
+    float: left;
+    margin-right: 5%;
+}
+
 .planet{
     width:100px;
     height:100px;
@@ -246,8 +259,7 @@ i{
   .animate-flicker {
     overflow: hidden;
     position: absolute;
-    padding-left: 70%;
-    padding-top: 10%;
+    padding-left: 10%;
     color: rgb(85, 203, 239);
      -webkit-animation: flickerAnimation .5s infinite;
      -moz-animation: flickerAnimation .5s infinite;
@@ -259,7 +271,7 @@ i{
     overflow: hidden;
     position: absolute;
     padding-left: 30%;
-    padding-top: 30%;
+    padding-top: 35%;
     color: #ffffff;
      -webkit-animation: flickerAnimation .5s infinite;
      -moz-animation: flickerAnimation .5s infinite;
@@ -284,14 +296,13 @@ i{
         height: 20%;
         margin-left: 10%;
         font-size: smaller;
-        float: none;
+        float:none;
         margin-bottom: 2%;
     }
     .preview-info{
         width: 100%;
         margin-left: 0%;
         font-size: smaller;
-        float: none;
         margin-bottom: 2%;
     }
     .navbar{
@@ -316,6 +327,11 @@ i{
     .project-details{
         width: 94%;
         margin-left: 3%;
+    }
+    .preview-skills{
+        width: 100%;
+        margin: auto;
+        padding: 0;
     }
     .sm-links a, .sm-links i{
         padding-top: 5%;
