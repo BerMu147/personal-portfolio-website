@@ -288,6 +288,13 @@ i{
         text-align: center;
         font-size: smaller;
     }
+    .preview, .preview-info, .preview-skills{
+        width: 100%;
+        margin: auto;
+    }
+    .planet{
+        margin: 250px;
+    }
 }
 
   @media only screen and (max-width: 420px) {
@@ -316,7 +323,7 @@ i{
         font-size: smaller;
     }
     .planet{
-        margin: 100px;
+        margin: 130px;
     }
     .contact-form{
         width: 100%;
@@ -333,9 +340,14 @@ i{
         margin: auto;
         padding: 0;
     }
+    .preview-skills h4{
+        margin: auto;
+        padding-left: 40%;
+    }
     .sm-links a, .sm-links i{
         padding-top: 5%;
+        width: 100%;
         margin: auto;
-        font-size: larger;
+        font-size: 1.5em;
     }
   }
