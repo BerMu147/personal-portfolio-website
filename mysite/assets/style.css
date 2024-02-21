@@ -8,6 +8,27 @@ body{
     border-radius: 5px;
 }
 
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+  }
+
 .stars {
      top: 0;
      bottom: 0;
@@ -151,6 +172,7 @@ a{
     display: inline-block;
     color: #ffffff;
     margin: 5%;
+    font-size: xx-large;
 }
 
 .fa{
@@ -173,6 +195,7 @@ i{
     color: #ffffff;
     padding: 2%;
     border: 1px solid #ffffff;
+    animation: flickerAnimation 1.5s infinite;
 }
 
 .experience-card{
@@ -185,37 +208,41 @@ i{
 }
 
 .planet{
-    width:300px;
-    height:300px;
+    width:100px;
+    height:100px;
     position:absolute;
     border-radius:50%;
     overflow:hidden;
     box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
     left:50%;
     top:50%;
-    margin:-150px;
+    margin:200px;
   }
 
-  @keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0.5; }
-    100% { opacity:1; }
+.planet .mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+    border-radius:50%;
   }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0.5; }
-    100% { opacity:1; }
+
+  .planet .background{
+    background:  repeat-x;
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:50%;
   }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0.5; }
-    100% { opacity:1; }
+
+  .planet .clouds{
+    background: #e28904 repeat-x;
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:50%;
   }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0.5; }
-    100% { opacity:1; }
-  }
+
   .animate-flicker {
     overflow: hidden;
     position: absolute;
@@ -277,6 +304,9 @@ i{
         text-align: center;
         font-size: smaller;
     }
+    .planet{
+        margin: 100px;
+    }
     .contact-form{
         width: 100%;
         margin: 0;
@@ -287,8 +317,9 @@ i{
         width: 94%;
         margin-left: 3%;
     }
-    .sm-links a{
-        padding-top: 2%;
-        margin: 0;
+    .sm-links a, .sm-links i{
+        padding-top: 5%;
+        margin: auto;
+        font-size: larger;
     }
   }
