@@ -198,6 +198,10 @@ i{
     opacity: 0.9;
 }
 
+.experience-details{
+    margin-bottom: 10px;
+}
+
 .project-title, .section-title{
     text-align: center;
     color: #ffffff;
@@ -323,7 +327,9 @@ i{
         font-size: smaller;
     }
     .planet{
-        margin: 130px;
+        margin: 135px;
+        width:64px;
+        height:64px;
     }
     .contact-form{
         width: 100%;
@@ -346,8 +352,7 @@ i{
     }
     .sm-links a, .sm-links i{
         padding-top: 5%;
-        width: 100%;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
   }
